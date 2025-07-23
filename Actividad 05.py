@@ -12,20 +12,21 @@ while True:
     match option:
         case "1":
             print("Ingreso de ventas")
-            day_admitted= int(input("ingrese cuantos dias quiere ingresar"))
+            day_admitted= int(input("ingrese cuantos dias quiere ingresar "))
             for i in range (day_admitted):
                 while True:
-                    venta_= input("Ingrese la cantidad de las ventas")
+                    venta_= input("Ingrese la cantidad de las ventas ")
                     if venta_.isdigit():
                         venta= int(venta_)
                         ventas.append(venta)
                         break
                     else:
-                        print("Error datos invalidos ")
+                        print("Error datos invalidos, vuelva a intentarlo ")
         case "2":
-            print("Mostrando ventas ingresadas...")
+            print("\n Mostrar todas la ventas realizadas")
+            print(ventas)
         case "3":
-            print("Calculando ventas...")
+            print("\n Calculando ventas ")
         case "4":
             print("")
         case "5":
