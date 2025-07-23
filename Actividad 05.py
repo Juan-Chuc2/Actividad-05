@@ -39,7 +39,19 @@ while True:
             else:
                 print("Verifique, no hay ventas realizadas")
         case "4":
-            print("")
+            print("\n Calculando el promedio de ventas")
+            addition = 0
+            counter = 0
+            for n in ventas:
+                addition += n
+                counter += 1
+            if counter >0:
+                average= addition/counter
+                print(f"la suma es: {addition}")
+                print(f"El numero de elementos en lalista es: {counter}")
+                print(f"El promedio es: {average}")
+            else:
+                print("no se puede calcular ningun promedio ya que la lista esta vacia")
         case "5":
             print("")
         case "6":
