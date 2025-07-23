@@ -31,6 +31,13 @@ while True:
                 print("no hay ventas ingresadas ")
         case "3":
             print("\n Calculando las ventas mas baja y mas alta ")
+            if ventas:
+                highest_sale = max(ventas)
+                lowest_sale = min(ventas)
+                print(f" La venta mas alta fue: Q{highest_sale}")
+                print(f"La venta mas baja fue: Q{lowest_sale}")
+            else:
+                print("Verifique, no hay ventas realizadas")
         case "4":
             print("")
         case "5":
