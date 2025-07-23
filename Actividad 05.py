@@ -63,6 +63,13 @@ while True:
             else:
                 print("No se ha registrado ninguna venta :(")
         case "6":
-          print()
+            print("\n Clasificacion de ventas (Alta, Media, Baja)")
+            for venta in ventas:
+                if venta >1000:
+                    print(f" La venta de {venta}, se clasifica como Venta Alta")
+                elif venta >=500 and venta <=1000:
+                    print(f"la venta de {venta }, se clasifica como Venta Media")
+                else:
+                    print(f"la venta de {venta}, esta clasificada como Venta Baja ")
         case "7":
             print("Estamos slaiendo...")
