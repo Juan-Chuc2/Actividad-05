@@ -53,8 +53,16 @@ while True:
             else:
                 print("no se puede calcular ningun promedio ya que la lista esta vacia")
         case "5":
-            print("")
+            print("\n Calculando cuantos dias se superaon los Q1000 de ventas ")
+            if ventas:
+                counter1= 0
+                for venta in ventas:
+                    if venta > 1000:
+                        counter1 +=1
+                        print(f"Fue(ron) {counter1} día(s) donde las ventas fueron mayores a Q1000")
+            else:
+                print("No se ha registrado ninguna venta :(")
         case "6":
-            print("hola ")
+          print()
         case "7":
             print("Estamos slaiendo...")
