@@ -24,9 +24,13 @@ while True:
                         print("Error datos invalidos, vuelva a intentarlo ")
         case "2":
             print("\n Mostrar todas la ventas realizadas")
-            print(ventas)
+            if ventas:
+                for i in range(len(ventas)):
+                    print(f"Día {i + 1}: Q{ventas[i]}")
+            else:
+                print("no hay ventas ingresadas ")
         case "3":
-            print("\n Calculando ventas ")
+            print("\n Calculando las ventas mas baja y mas alta ")
         case "4":
             print("")
         case "5":
