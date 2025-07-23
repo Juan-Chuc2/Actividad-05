@@ -72,4 +72,8 @@ while True:
                 else:
                     print(f"la venta de {venta}, esta clasificada como Venta Baja ")
         case "7":
-            print("Estamos slaiendo...")
+            print("Estas Saliendo del progrma")
+            print("Gracias por utilizar nuestro programa")
+            break
+        case _:
+            print("Error dato invalido, Intentelo de nuevo")
